@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        EduTrack | المنصة التعليمية
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         ROLE SCREEN
+         ===================================================== -->
+
+    <section id="roleScreen">
+
+        <div class="role-container">
+
+            <div class="logo">
+                E
+            </div>
+
+
+            <h1>
+                EduTrack
+            </h1>
+
+
+            <p>
+                المنصة التعليمية الذكية
+            </p>
+
+
+            <div class="role-grid">
+
+
+                <!-- STUDENT -->
+
+                <button
+                    type="button"
+                    class="role-card"
+                    data-role="student"
+                >
+
+                    <div class="role-icon">
+                        🎓
+                    </div>
+
+
+                    <h2>
+                        طالب
+                    </h2>
+
+
+                    <p>
+                        الدخول إلى حساب الطالب
+                        ومتابعة المستوى والمحتوى التعليمي.
+                    </p>
+
+
+                    <span class="role-button">
+                        دخول كطالب
+                    </span>
+
+                </button>
+
+
+
+                <!-- TEACHER -->
+
+                <button
+                    type="button"
+                    class="role-card"
+                    data-role="teacher"
+                >
+
+                    <div class="role-icon">
+                        👨‍🏫
+                    </div>
+
+
+                    <h2>
+                        مدرس
+                    </h2>
+
+
+                    <p>
+                        إدارة الطلاب والمحتوى
+                        ومتابعة الأداء والتقارير.
+                    </p>
+
+
+                    <span class="role-button">
+                        دخول كمدرس
+                    </span>
+
+                </button>
+
+
+
+                <!-- SUPERVISOR -->
+
+                <button
+                    type="button"
+                    class="role-card"
+                    data-role="supervisor"
+                >
+
+                    <div class="role-icon">
+                        👁️
+                    </div>
+
+
+                    <h2>
+                        مشرف
+                    </h2>
+
+
+                    <p>
+                        متابعة التقارير ومستوى الطلاب
+                        بدون الوصول إلى المحتوى التعليمي.
+                    </p>
+
+
+                    <span class="role-button">
+                        دخول كمشرف
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         GRADE SELECTION
+         ===================================================== -->
+
+    <section
+        id="gradeScreen"
+        class="hidden"
+    >
+
+        <div class="role-container">
+
+            <div class="logo">
+                E
+            </div>
+
+
+            <h1>
+                اختر الصف الدراسي
+            </h1>
+
+
+            <p id="gradeDescription">
+                اختر الصف الدراسي للمتابعة
+            </p>
+
+
+            <div class="role-grid grade-grid">
+
+
+                <!-- أولى إعدادي -->
+
+                <button
+                    type="button"
+                    class="role-card grade-card"
+                    data-grade="prep1"
+                >
+
+                    <div class="role-icon">
+                        1️⃣
+                    </div>
+
+                    <h2>
+                        أولى إعدادي
+                    </h2>
+
+                    <span class="role-button">
+                        اختيار الصف
+                    </span>
+
+                </button>
+
+
+
+                <!-- تانية إعدادي -->
+
+                <button
+                    type="button"
+                    class="role-card grade-card"
+                    data-grade="prep2"
+                >
+
+                    <div class="role-icon">
+                        2️⃣
+                    </div>
+
+                    <h2>
+                        تانية إعدادي
+                    </h2>
+
+                    <span class="role-button">
+                        اختيار الصف
+                    </span>
+
+                </button>
+
+
+
+                <!-- تالتة إعدادي -->
+
+                <button
+                    type="button"
+                    class="role-card grade-card"
+                    data-grade="prep3"
+                >
+
+                    <div class="role-icon">
+                        3️⃣
+                    </div>
+
+                    <h2>
+                        تالتة إعدادي
+                    </h2>
+
+                    <span class="role-button">
+                        اختيار الصف
+                    </span>
+
+                </button>
+
+
+
+                <!-- أولى ثانوي -->
+
+                <button
+                    type="button"
+                    class="role-card grade-card"
+                    data-grade="secondary1"
+                >
+
+                    <div class="role-icon">
+                        1️⃣
+                    </div>
+
+                    <h2>
+                        أولى ثانوي
+                    </h2>
+
+                    <span class="role-button">
+                        اختيار الصف
+                    </span>
+
+                </button>
+
+
+
+                <!-- تانية ثانوي -->
+
+                <button
+                    type="button"
+                    class="role-card grade-card"
+                    data-grade="secondary2"
+                >
+
+                    <div class="role-icon">
+                        2️⃣
+                    </div>
+
+                    <h2>
+                        تانية ثانوي
+                    </h2>
+
+                    <span class="role-button">
+                        اختيار الصف
+                    </span>
+
+                </button>
+
+
+
+                <!-- تالتة ثانوي -->
+
+                <button
+                    type="button"
+                    class="role-card grade-card"
+                    data-grade="secondary3"
+                >
+
+                    <div class="role-icon">
+                        3️⃣
+                    </div>
+
+                    <h2>
+                        تالتة ثانوي
+                    </h2>
+
+                    <span class="role-button">
+                        اختيار الصف
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+            <button
+                id="backFromGrade"
+                class="secondary"
+                type="button"
+                style="margin-top:25px;"
+            >
+                ← العودة لاختيار نوع المستخدم
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         TEACHER PASSWORD
+         ===================================================== -->
+
+    <section
+        id="teacherPasswordScreen"
+        class="hidden"
+    >
+
+        <div class="role-container">
+
+            <div class="logo">
+                E
+            </div>
+
+
+            <h1>
+                دخول المعلم
+            </h1>
+
+
+            <p>
+                أدخل كلمة المرور للمتابعة
+            </p>
+
+
+            <div
+                class="card"
+                style="
+                    max-width:430px;
+                    margin:30px auto;
+                    text-align:right;
+                "
+            >
+
+
+                <div class="form-group">
+
+                    <label>
+                        الصف المختار
+                    </label>
+
+
+                    <input
+                        id="selectedTeacherGrade"
+                        class="input"
+                        type="text"
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label>
+                        كلمة مرور المعلم
+                    </label>
+
+
+                    <input
+                        id="teacherPassword"
+                        class="input"
+                        type="password"
+                        placeholder="أدخل كلمة المرور"
+                        autocomplete="current-password"
+                    >
+
+                </div>
+
+
+
+                <button
+                    id="teacherLoginButton"
+                    class="primary"
+                    type="button"
+                >
+                    دخول المعلم
+                </button>
+
+
+                <button
+                    id="backFromTeacherPassword"
+                    class="secondary"
+                    type="button"
+                    style="margin-top:10px;"
+                >
+                    ← العودة لاختيار الصف
+                </button>
+
+
+                <div
+                    id="teacherLoginError"
+                    class="login-error"
+                ></div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         APPLICATION
+         ===================================================== -->
+
+    <section
+        id="app"
+        class="hidden"
+    >
+
+
+        <!-- =================================================
+             SIDEBAR
+             ================================================= -->
+
+        <aside class="sidebar">
+
+
+            <!-- BRAND -->
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    E
+                </div>
+
+
+                <div>
+
+                    <div class="brand-title">
+                        EduTrack
+                    </div>
+
+
+                    <span class="brand-subtitle">
+                        المنصة التعليمية
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROFILE -->
+
+            <div class="profile">
+
+                <div
+                    id="avatar"
+                    class="avatar"
+                >
+                    م
+                </div>
+
+
+                <div>
+
+                    <div
+                        id="profileName"
+                        class="profile-name"
+                    >
+                        المستخدم
+                    </div>
+
+
+                    <div
+                        id="profileRole"
+                        class="profile-role"
+                    >
+                        مستخدم
+                    </div>
+
+
+                    <div
+                        id="profileGrade"
+                        class="profile-role"
+                    >
+                        الصف
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="nav">
+
+
+                <!-- DASHBOARD -->
+
+                <button
+                    class="nav-btn active"
+                    data-page="dashboard"
+                >
+                    🏠 لوحة التحكم
+                </button>
+
+
+
+                <!-- STUDENTS -->
+
+                <button
+                    class="nav-btn"
+                    data-page="students"
+                    data-permission="management"
+                >
+                    👨‍🎓 الطلاب
+                </button>
+
+
+
+                <!-- CONTENT -->
+
+                <button
+                    class="nav-btn"
+                    data-page="content"
+                    data-permission="content"
+                >
+                    🎬 المحتوى
+                </button>
+
+
+
+                <!-- REPORTS -->
+
+                <button
+                    class="nav-btn"
+                    data-page="reports"
+                    data-permission="reports"
+                >
+                    📊 التقارير
+                </button>
+
+
+            </nav>
+
+
+
+            <!-- CURRENT GRADE -->
+
+            <div
+                class="card"
+                style="
+                    margin:15px;
+                    padding:14px;
+                "
+            >
+
+                <small>
+                    الصف الحالي
+                </small>
+
+
+                <strong
+                    id="currentGradeName"
+                    style="
+                        display:block;
+                        margin-top:5px;
+                    "
+                >
+                    -
+                </strong>
+
+            </div>
+
+
+
+            <!-- CHANGE ROLE -->
+
+            <button
+                id="changeRole"
+                class="switch-role"
+                type="button"
+            >
+                🔄 تغيير نوع المستخدم
+            </button>
+
+
+
+            <!-- LOGOUT -->
+
+            <button
+                id="logoutButton"
+                class="switch-role"
+                type="button"
+            >
+                🚪 تسجيل الخروج
+            </button>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+             ================================================= -->
+
+        <main class="main">
+
+
+            <!-- TOP BAR -->
+
+            <header class="topbar">
+
+
+                <div>
+
+                    <h1 id="pageTitle">
+                        الرئيسية
+                    </h1>
+
+
+                    <p id="pageDescription">
+                        مرحبًا بك في EduTrack
+                    </p>
+
+                </div>
+
+
+
+                <div
+                    id="headerAvatar"
+                    class="avatar"
+                >
+                    م
+                </div>
+
+
+            </header>
+
+
+
+            <!-- READ ONLY BANNER -->
+
+            <div
+                id="readonlyBanner"
+                class="readonly-banner hidden"
+            >
+
+                👁️ أنت الآن في وضع المشاهدة.
+
+                <br>
+
+                لا توجد لديك صلاحية إضافة أو تعديل أو حذف البيانات.
+
+                <br>
+
+                يمكنك فقط متابعة التقارير والطلاب.
+
+            </div>
+
+
+
+            <!-- =================================================
+                 DASHBOARD
+                 ================================================= -->
+
+            <section
+                id="dashboardPage"
+                class="page"
+            ></section>
+
+
+
+            <!-- =================================================
+                 STUDENTS
+                 ================================================= -->
+
+            <section
+                id="studentsPage"
+                class="page hidden"
+            >
+
+                <div class="page-header">
+
+                    <div>
+
+                        <h2>
+                            متابعة الطلاب
+                        </h2>
+
+
+                        <p>
+                            متابعة تقدم ومستوى الطلاب
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        id="addStudent"
+                        class="primary"
+                        type="button"
+                        data-permission="management"
+                    >
+                        + إضافة طالب
+                    </button>
+
+                </div>
+
+
+
+                <div class="card">
+
+
+                    <input
+                        id="studentSearch"
+                        class="input"
+                        type="search"
+                        placeholder="ابحث باسم الطالب أو ID"
+                    >
+
+
+                    <br>
+                    <br>
+
+
+                    <div class="table-wrap">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        الطالب
+                                    </th>
+
+                                    <th>
+                                        ID
+                                    </th>
+
+                                    <th>
+                                        الصف
+                                    </th>
+
+                                    <th>
+                                        السابق
+                                    </th>
+
+                                    <th>
+                                        الحالي
+                                    </th>
+
+                                    <th>
+                                        التغير
+                                    </th>
+
+                                    <th>
+                                        الحالة
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody
+                                id="studentsTable"
+                            ></tbody>
+
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CONTENT
+                 ================================================= -->
+
+            <section
+                id="contentPage"
+                class="page hidden"
+            >
+
+
+                <div class="page-header">
+
+
+                    <div>
+
+                        <h2>
+                            المحتوى التعليمي
+                        </h2>
+
+
+                        <p>
+                            الصور والفيديوهات والملفات التعليمية
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =============================================
+                     TEACHER UPLOAD AREA
+                     ============================================= -->
+
+                <div
+                    id="uploadArea"
+                    class="upload-grid"
+                    data-permission="upload"
+                >
+
+
+                    <!-- =========================================
+                         UPLOAD FROM DEVICE
+                         ========================================= -->
+
+                    <div class="card">
+
+
+                        <h3>
+                            📁 رفع من الجهاز
+                        </h3>
+
+
+                        <p
+                            style="
+                                color:#718096;
+                                font-size:13px;
+                                margin:8px 0 18px;
+                            "
+                        >
+                            صور - فيديو - PDF - Word -
+                            PowerPoint - TXT وغيرها.
+                        </p>
+
+
+
+                        <!-- TITLE -->
+
+                        <div class="form-group">
+
+                            <label>
+                                اسم المحتوى
+                            </label>
+
+
+                            <input
+                                id="contentTitle"
+                                class="input"
+                                type="text"
+                                placeholder="مثال: المحاضرة الأولى"
+                            >
+
+                        </div>
+
+
+
+                        <!-- FILE -->
+
+                        <div class="form-group">
+
+                            <label>
+                                الملف
+                            </label>
+
+
+                            <input
+                                id="contentFile"
+                                class="input"
+                                type="file"
+                                accept="
+                                    image/*,
+                                    video/*,
+                                    audio/*,
+                                    .pdf,
+                                    .doc,
+                                    .docx,
+                                    .ppt,
+                                    .pptx,
+                                    .txt,
+                                    .xls,
+                                    .xlsx,
+                                    .csv,
+                                    .zip
+                                "
+                            >
+
+                        </div>
+
+
+
+                        <!-- CONTENT TYPE -->
+
+                        <div class="form-group">
+
+                            <label>
+                                نوع المحتوى
+                            </label>
+
+
+                            <select
+                                id="contentType"
+                                class="input"
+                            >
+
+                                <option value="auto">
+                                    تلقائي
+                                </option>
+
+
+                                <option value="image">
+                                    🖼️ صورة
+                                </option>
+
+
+                                <option value="video">
+                                    🎥 فيديو
+                                </option>
+
+
+                                <option value="document">
+                                    📄 مستند
+                                </option>
+
+
+                                <option value="pdf">
+                                    📕 PDF
+                                </option>
+
+
+                                <option value="presentation">
+                                    📊 PowerPoint
+                                </option>
+
+
+                                <option value="other">
+                                    📁 ملف آخر
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- UPLOAD BUTTON -->
+
+                        <button
+                            id="uploadFile"
+                            class="primary"
+                            type="button"
+                        >
+                            📤 رفع المحتوى
+                        </button>
+
+
+                    </div>
+
+
+
+                    <!-- =========================================
+                         INTERNET LINK
+                         ========================================= -->
+
+                    <div class="card">
+
+
+                        <h3>
+                            🌐 إضافة من الإنترنت
+                        </h3>
+
+
+                        <p
+                            style="
+                                color:#718096;
+                                font-size:13px;
+                                margin:8px 0 18px;
+                            "
+                        >
+                            أضف رابط صورة أو فيديو أو ملف
+                            أو رابط درس من الإنترنت.
+                        </p>
+
+
+
+                        <!-- URL TITLE -->
+
+                        <div class="form-group">
+
+                            <label>
+                                اسم المحتوى
+                            </label>
+
+
+                            <input
+                                id="urlTitle"
+                                class="input"
+                                type="text"
+                                placeholder="اسم المحتوى"
+                            >
+
+                        </div>
+
+
+
+                        <!-- URL -->
+
+                        <div class="form-group">
+
+                            <label>
+                                الرابط
+                            </label>
+
+
+                            <input
+                                id="contentURL"
+                                class="input"
+                                type="url"
+                                placeholder="https://example.com/video"
+                            >
+
+                        </div>
+
+
+
+                        <!-- URL TYPE -->
+
+                        <div class="form-group">
+
+                            <label>
+                                نوع الرابط
+                            </label>
+
+
+                            <select
+                                id="urlType"
+                                class="input"
+                            >
+
+                                <option value="auto">
+                                    اكتشاف تلقائي
+                                </option>
+
+
+                                <option value="video">
+                                    🎥 فيديو
+                                </option>
+
+
+                                <option value="image">
+                                    🖼️ صورة
+                                </option>
+
+
+                                <option value="document">
+                                    📄 مستند
+                                </option>
+
+
+                                <option value="link">
+                                    🔗 رابط
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- ADD URL -->
+
+                        <button
+                            id="addURL"
+                            class="primary"
+                            type="button"
+                        >
+                            🔗 إضافة الرابط
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =============================================
+                     CONTENT LIBRARY
+                     ============================================= -->
+
+                <div class="card">
+
+
+                    <h3
+                        style="
+                            margin-bottom:18px;
+                        "
+                    >
+                        📚 مكتبة المحتوى
+                    </h3>
+
+
+                    <div
+                        id="contentGrid"
+                        class="content-grid"
+                    ></div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 REPORTS
+                 ================================================= -->
+
+            <section
+                id="reportsPage"
+                class="page hidden"
+            >
+
+
+                <div class="page-header">
+
+
+                    <div>
+
+                        <h2>
+                            التقارير
+                        </h2>
+
+
+                        <p>
+                            تحليل مستوى الطلاب
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div
+                    id="reportsContainer"
+                ></div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         STUDENT MODAL
+         ===================================================== -->
+
+    <div
+        id="studentModal"
+        class="modal hidden"
+    >
+
+
+        <div class="modal-box">
+
+
+            <button
+                id="closeModal"
+                class="close"
+                type="button"
+            >
+                ×
+            </button>
+
+
+
+            <h2>
+                إنشاء طالب
+            </h2>
+
+
+
+            <p
+                style="
+                    color:#718096;
+                    font-size:13px;
+                    margin:10px 0 20px;
+                "
+            >
+                النظام سيقوم تلقائيًا بإنشاء
+                ID وكلمة مرور للطالب.
+            </p>
+
+
+
+            <form id="studentForm">
+
+
+                <div class="form-group">
+
+                    <label>
+                        اسم الطالب
+                    </label>
+
+
+                    <input
+                        id="studentName"
+                        class="input"
+                        type="text"
+                        required
+                        placeholder="اسم الطالب"
+                    >
+
+                </div>
+
+
+
+                <!--
+                    الصف يتم أخذه تلقائيًا
+                    من الصف الذي اختاره المعلم
+                -->
+
+                <div class="form-group">
+
+                    <label>
+                        الصف الدراسي
+                    </label>
+
+
+                    <input
+                        id="studentGrade"
+                        class="input"
+                        type="text"
+                        readonly
+                        placeholder="سيتم تحديد الصف تلقائيًا"
+                    >
+
+                </div>
+
+
+
+                <button
+                    class="primary"
+                    type="submit"
+                >
+                    إنشاء الحساب
+                </button>
+
+
+            </form>
+
+
+
+            <div
+                id="accountResult"
+            ></div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script
+        src="script.js"
+        defer
+    ></script>
+
+
+</body>
+
+</html>
